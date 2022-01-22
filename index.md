@@ -18,7 +18,6 @@ Provided by IoTeX foundation
 
 ### Ankr
 
-Web3 only
 ```
 https://rpc.ankr.com/iotex
 ```
