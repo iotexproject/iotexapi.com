@@ -1,37 +1,32 @@
-## Welcome to GitHub Pages
+# iotexapi.com
 
-You can use the [editor on GitHub](https://github.com/iotexproject/iotexapi.com/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+This is a list of commonly used IoTeX APIs.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Web3 APIs (AKA RPC endpoints)
 
-### Markdown
+### Official
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+babel-api.iotex.io
+```
+```
+babel-api.mainnet.iotex.io
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+Provided by IoTeX foundation
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/iotexproject/iotexapi.com/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Ankr
 
-### Support or Contact
+Web3 only
+```
+https://rpc.ankr.com/iotex
+```
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+For more details, please refer to https://www.ankr.com/protocol/public/iotex/
+
+
+## How to use these APIs with metamask?
+
+https://docs.iotex.io/get-started/iotex-wallets/metamask
+
