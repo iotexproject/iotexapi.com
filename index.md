@@ -32,7 +32,7 @@ These API endpoints are provided by IoTeX foundation.
 ### Ankr
 
 ```
-[https://rpc.ankr.com/iotex](https://rpc.ankr.com/iotex)
+https://rpc.ankr.com/iotex
 ```
 
 For more details, please refer to [https://www.ankr.com/protocol/public/iotex/](https://www.ankr.com/protocol/public/iotex/)
