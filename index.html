@@ -13,6 +13,22 @@
       padding: 20px;
     }
 
+    table {
+      border-spacing: 0;
+      border-collapse: collapse;
+    }
+
+    td {
+      padding: 6px 13px;
+      border: 1px solid #c8c8c8;
+
+    }
+
+    th {
+      padding: 6px 13px;
+      border: 1px solid #c8c8c8;
+    }
+
     * {
       color: #34495e;
     }
@@ -116,6 +132,7 @@
     pre {
       background: #f2f2f2 !important;
       padding: 12px 13px;
+      position: relative;
     }
 
     code {
@@ -126,6 +143,30 @@
       white-space: inherit;
       background-color: #f8f8f8;
     }
+
+    pre:hover button {
+      display: block;
+    }
+
+    button {
+      background: #d9d9d9;
+      border: none;
+      position: absolute;
+      top: calc(50% - 14px);
+      border-radius: 5px;
+      right: 10px;
+      font-size: 12px;
+      padding: 5px 10px;
+      color: #737373;
+      height: 28px;
+      transition: all .3s;
+      display: none;
+    }
+
+    button:hover {
+      background: #cfcfcf;
+      transition: all .2s;
+    }
   </style>
 </head>
 
@@ -135,9 +176,40 @@
     var md = window.markdownit();
     $.get("./index.md", (data) => {
       var result = md.render(data);
-      console.log(result)
       document.getElementById('root').innerHTML = result
+
+      var copy = function (target, e) {
+        e.path[0].innerHTML = "Copied!"
+        e.path[0].style.background = "#78b55d"
+        e.path[0].style.color = "white"
+        setTimeout(() => {
+          e.path[0].style.background = "#d9d9d9"
+          e.path[0].style.color = "#737373"
+          e.path[0].innerHTML = "Copy!"
+        }, 1000)
+        var textArea = document.createElement('textarea')
+        textArea.setAttribute('style', 'width:1px;border:0;opacity:0;')
+        document.body.appendChild(textArea)
+        textArea.value = target.innerHTML
+        textArea.select()
+        document.execCommand('copy')
+        document.body.removeChild(textArea)
+      }
+
+      var pres = document.querySelectorAll("pre")
+      pres.forEach(function (pre) {
+        var button = document.createElement("button")
+        button.className = "btn btn-sm"
+        button.innerHTML = "Copy"
+        pre.append(button)
+        button.addEventListener('click', function (e) {
+          e.preventDefault()
+          copy(pre.childNodes[0], e)
+        })
+      })
     }, 'text');
+
+
 
   </script>
 </body>
