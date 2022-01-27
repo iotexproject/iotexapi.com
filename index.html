@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IoTex api</title>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.3.2/markdown-it.min.js"></script>
+  <style>
+    body {
+      padding: 20px;
+    }
+
+    table {
+      border-spacing: 0;
+      border-collapse: collapse;
+    }
+
+    td {
+      padding: 6px 13px;
+      border: 1px solid #c8c8c8;
+
+    }
+
+    th {
+      padding: 6px 13px;
+      border: 1px solid #c8c8c8;
+    }
+
+    * {
+      color: #34495e;
+    }
+
+    p {
+      letter-spacing: 1px !important;
+      line-height: 1.7 !important;
+      min-height: 1em !important;
+      box-sizing: border-box !important;
+      word-wrap: break-word !important;
+      text-align: justify;
+      margin: 20px 0 !important;
+    }
+
+    blockquote {
+      border-left: 4px solid #42b983;
+      padding: 0 15px !important;
+      margin: 0px;
+    }
+
+    strong {
+      font-weight: bold;
+      /*border-bottom: 2px solid #BADA55;*/
+      /*color: #898989;*/
+    }
+
+    body {
+      font-size: 15px;
+    }
+
+    pre {
+      background-color: #f8f8f8;
+      border-radius: 3px;
+      word-wrap: break-word;
+      padding: 12px 13px;
+      font-size: 13px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      word-break: break-all !important;
+      margin: 20px 0;
+      padding-bottom: .3em;
+      line-height: 1.2;
+      text-align: left;
+      font-weight: bold;
+      color: #2c3e50;
+      position: relative;
+    }
+
+    h1:before,
+    h2:before {
+      content: "#";
+      color: #42b983;
+      position: absolute;
+      left: -0.8em;
+      top: -2px;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    h1 {
+      /*border-bottom: 8px solid #71BA51 !important;*/
+      font-size: 20px !important;
+    }
+
+    h2 {
+      /*border-bottom: 5px solid #71BA51 !important;*/
+      font-size: 18px !important;
+    }
+
+    a {
+      color: #42b983 !important;
+      text-decoration: none !important;
+    }
+
+    ul,
+    ol {
+      padding-left: 30px;
+    }
+
+    li {
+      line-height: 24px;
+    }
+
+    hr {
+      height: 4px;
+      padding: 0;
+      margin: 16px 0;
+      background-color: #e7e7e7;
+      border: 0 none;
+      overflow: hidden;
+      box-sizing: content-box;
+      border-bottom: 1px solid #ddd;
+    }
+
+    pre {
+      background: #f2f2f2 !important;
+      padding: 12px 13px;
+      position: relative;
+    }
+
+    code {
+      margin: 0 2px;
+      padding: 3px 5px;
+      color: #e96900;
+      border-radius: 2px;
+      white-space: inherit;
+      background-color: #f8f8f8;
+    }
+
+    pre:hover button {
+      display: block;
+    }
+
+    button {
+      background: #d9d9d9;
+      border: none;
+      position: absolute;
+      top: calc(50% - 14px);
+      border-radius: 5px;
+      right: 10px;
+      font-size: 12px;
+      padding: 5px 10px;
+      color: #737373;
+      height: 28px;
+      transition: all .3s;
+      display: none;
+    }
+
+    button:hover {
+      background: #cfcfcf;
+      transition: all .2s;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script>
+    var md = window.markdownit();
+    $.get("./index.md", (data) => {
+      var result = md.render(data);
+      document.getElementById('root').innerHTML = result
+
+      var copy = function (target, e) {
+        e.path[0].innerHTML = "Copied!"
+        e.path[0].style.background = "#78b55d"
+        e.path[0].style.color = "white"
+        setTimeout(() => {
+          e.path[0].style.background = "#d9d9d9"
+          e.path[0].style.color = "#737373"
+          e.path[0].innerHTML = "Copy!"
+        }, 1000)
+        var textArea = document.createElement('textarea')
+        textArea.setAttribute('style', 'width:1px;border:0;opacity:0;')
+        document.body.appendChild(textArea)
+        textArea.value = target.innerHTML
+        textArea.select()
+        document.execCommand('copy')
+        document.body.removeChild(textArea)
+      }
+
+      var pres = document.querySelectorAll("pre")
+      pres.forEach(function (pre) {
+        var button = document.createElement("button")
+        button.className = "btn btn-sm"
+        button.innerHTML = "Copy"
+        pre.append(button)
+        button.addEventListener('click', function (e) {
+          e.preventDefault()
+          copy(pre.childNodes[0], e)
+        })
+      })
+    }, 'text');
+
+
+
+  </script>
+</body>
+
+</html>
