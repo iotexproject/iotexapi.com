@@ -45,6 +45,10 @@ https://iotex-rpc.gateway.pokt.network
 
 Please refer to [https://www.pokt.network/](https://www.pokt.network/) for more details.
 
+## Contribute to this website?
+
+Please visit https://github.com/iotexproject/iotexapi.com for issues, PRs. 
+
 ## How to use these APIs with metamask?
 
 [https://docs.iotex.io/get-started/iotex-wallets/metamask](https://docs.iotex.io/get-started/iotex-wallets/metamask)
