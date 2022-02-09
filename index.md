@@ -35,8 +35,15 @@ These API endpoints are provided by IoTeX foundation.
 https://rpc.ankr.com/iotex
 ```
 
-For more details, please refer to [https://www.ankr.com/protocol/public/iotex/](https://www.ankr.com/protocol/public/iotex/)
+Please refer to [https://www.ankr.com/protocol/public/iotex/](https://www.ankr.com/protocol/public/iotex/) for more details.
 
+### Pocket Network
+
+```
+https://iotex-rpc.gateway.pokt.network 
+```
+
+Please refer to [https://www.pokt.network/](https://www.pokt.network/) for more details.
 
 ## How to use these APIs with metamask?
 
