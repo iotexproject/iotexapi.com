@@ -15,13 +15,13 @@ This is a list of commonly used IoTeX APIs.
 ### Official
 
 ```
-babel-api.iotex.io
+https://babel-api.iotex.io
 ```
 ```
-babel-api.mainnet.iotex.io
+https://babel-api.mainnet.iotex.io
 ```
 ```
-babel-api.mainnet.iotex.one
+https://babel-api.mainnet.iotex.one
 ```
 
 For more details, please refer to [https://docs.iotex.io/reference/babel-web3-api](https://docs.iotex.io/reference/babel-web3-api)
