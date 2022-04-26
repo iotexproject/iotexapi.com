@@ -12,7 +12,7 @@ This is a list of commonly used IoTeX APIs.
 
 
 
-### Official
+### 1. IoTeX Foundation
 
 ```
 https://babel-api.iotex.io
@@ -28,6 +28,22 @@ For more details, please refer to [https://docs.iotex.io/reference/babel-web3-ap
 
 These API endpoints are provided by IoTeX foundation.
 
+### iotexprc.com (by Ankr)
+
+```
+https://iotexrpc.com/
+```
+
+iotexrpc.com is the fastest, free-est, and most reliable RPC endpoint for the Iotex network. This service is offered and maintained by Ankr.
+
+### Pocket Network
+
+```
+https://iotex-rpc.gateway.pokt.network 
+```
+
+Please refer to [https://www.pokt.network/](https://www.pokt.network/) for more details.
+
 
 ### Ankr
 
@@ -37,13 +53,6 @@ https://rpc.ankr.com/iotex
 
 Please refer to [https://www.ankr.com/protocol/public/iotex/](https://www.ankr.com/protocol/public/iotex/) for more details.
 
-### Pocket Network
-
-```
-https://iotex-rpc.gateway.pokt.network 
-```
-
-Please refer to [https://www.pokt.network/](https://www.pokt.network/) for more details.
 
 ## Contribute to this website?
 
