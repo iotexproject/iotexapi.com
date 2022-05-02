@@ -12,7 +12,7 @@ This is a list of commonly used IoTeX APIs.
 
 
 
-### 1. IoTeX Foundation
+### IoTeX Foundation
 
 ```
 https://babel-api.iotex.io
@@ -56,7 +56,7 @@ Please refer to [https://www.ankr.com/protocol/public/iotex/](https://www.ankr.c
 
 ## Contribute to this website?
 
-Please visit https://github.com/iotexproject/iotexapi.com for issues, PRs. 
+Please visit [https://github.com/iotexproject/iotexapi.com](https://github.com/iotexproject/iotexapi.com) for issues, PRs. 
 
 ## How to use these APIs with metamask?
 
