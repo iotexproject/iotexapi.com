@@ -23,6 +23,9 @@ https://babel-api.mainnet.iotex.io
 ```
 https://babel-api.mainnet.iotex.one
 ```
+```
+https://babel-api.fastblocks.io 
+```
 
 For more details, please refer to [https://docs.iotex.io/reference/babel-web3-api](https://docs.iotex.io/reference/babel-web3-api)
 
