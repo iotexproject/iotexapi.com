@@ -38,12 +38,9 @@ iotexrpc.com is the fastest, free-est, and most reliable RPC endpoint for the Io
 
 ### Pocket Network
 
-```
-https://iotex-rpc.gateway.pokt.network 
-```
+Pocket network has stopped free public RPC endpoint since 4/5/2023. (Announcement: https://twitter.com/POKTnetwork/status/1643749517546647552)
 
-Please refer to [https://www.pokt.network/](https://www.pokt.network/) for more details.
-
+Please sign in to [https://www.pokt.network/](https://www.pokt.network/) to get a personal IoTeX RPC endpoint for free (with some limits).
 
 ### Ankr
 
