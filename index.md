@@ -36,11 +36,15 @@ https://iotexrpc.com/
 
 iotexrpc.com is the fastest, free-est, and most reliable RPC endpoint for the Iotex network. This service is offered and maintained by Ankr.
 
-### Pocket Network
 
-Pocket network has stopped free public RPC endpoint since 4/5/2023. (Announcement: https://twitter.com/POKTnetwork/status/1643749517546647552)
+### Fastblocks
 
-Please sign in to [https://www.pokt.network/](https://www.pokt.network/) to get a personal IoTeX RPC endpoint for free (with some limits).
+Fastblocks provides IoTeX Node Management services. It offers a free public API as
+```
+https://babel-api.fastblocks.io
+```
+
+Please refer to https://www.fastblocks.io/ for more details.
 
 ### Ankr
 
@@ -49,6 +53,21 @@ https://rpc.ankr.com/iotex
 ```
 
 Please refer to [https://www.ankr.com/protocol/public/iotex/](https://www.ankr.com/protocol/public/iotex/) for more details.
+
+
+### RockX (Registration required)
+
+https://www.rockx.com/
+
+
+### Pocket Network (registration required)
+
+Please sign in to [https://www.pokt.network/](https://www.pokt.network/) to get a personal IoTeX RPC endpoint for free (with some limits).
+
+
+### Infstones (Registration required. Dedicated node. Paid)
+
+Infstones is a node management service where you can create your own IoTeX node and use private API. Please refer to https://infstones.com/ for more details.
 
 
 ## Contribute to this website?
