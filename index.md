@@ -44,7 +44,7 @@ Fastblocks provides IoTeX Node Management services. It offers a free public API 
 https://babel-api.fastblocks.io
 ```
 
-Please refer to https://www.fastblocks.io/ for more details.
+Please refer to [https://www.fastblocks.io/](https://www.fastblocks.io/) for more details.
 
 ### Ankr
 
